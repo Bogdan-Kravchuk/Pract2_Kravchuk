@@ -1,9 +1,9 @@
 public class Main {
 
     static void main(String[] args) {
-        BankAccount bankAccount = new BankAccount(-1, 0);
-        bankAccount.deposit(0);
-        bankAccount.withdraw(0);
+        BankAccount bankAccount = new BankAccount("1", 100);
+        bankAccount.deposit(400);
+        bankAccount.withdraw(200);
         bankAccount.getBalance();
 
 

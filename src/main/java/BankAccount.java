@@ -1,16 +1,16 @@
 public class BankAccount {
-    private final int accountNumber;
+    private final String accountNumber;
     private double balance;
 
-    public BankAccount(int accountNumber, double initialBalance){
-        if(accountNumber <= 0){
+    public BankAccount(String accountNumber, double initialBalance){
+        this.accountNumber=accountNumber;
+        if(accountNumber.equals(null) ){
             System.out.println("Номер рахунку повинен бути більше 0");
         }
         else {
             System.out.println("Акаунт " + accountNumber);
         }
 
-this.accountNumber=accountNumber;
 if(initialBalance<0){
     System.out.println("Invalid initial balance");
  throw new IllegalArgumentException();
